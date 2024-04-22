@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+        <div class="searchArea">
+            <form>
+                <label for="city">Search for your City...</label>
+                <br>
+                <input type="text" id="userCity" name="city">
+                <input class='submit-btn' type="submit" value="Submit">
+            </form>
+            <div class="recentCities">
+                <h2>Recent Searches:</h2>
+                <p>Atlanta</p>
+                <p>Atlanta</p>
+                <p>Atlanta</p>
+                <p>Atlanta</p>
+                <p>Atlanta</p>
+                <p>Atlanta</p>
+                <p>Atlanta</p>
+            </div>
+        </div>
+    </div> 
+    <div class='weather-area' id="weatherArea">
+        <h2 id="current-city">Showing Weather for: Your City</h2>
+        <div class='current-weather' id="currentWeather">
+            <div id="current-date">date</div>
+            <div id="icon">icon</div>
+            <div id="current-temp">temp</div>
+            <div id="current-windspeed">wind speed</div>
+            <div id="current-humidity">humidity</div>
+        </div>
+        <div class='future-weather-five' id="fiveDayWeather">
+            <div class='future-weather-one' id="dayOne">
+                <div id="Date">date</div>
+                <div id="icon">icon</div>
+                <div id="temp">temp</div>
+                <div id="windSpeed">wind speed</div>
+                <div id="humidity">humidity</div>
+            </div>
+            <div class='future-weather-one' id="dayTwo">
+                <div id="Date">date</div>
+                <div id="icon">icon</div>
+                <div id="temp">temp</div>
+                <div id="windSpeed">wind speed</div>
+                <div id="humidity">humidity</div>
+            </div>
+            <div class='future-weather-one' id="dayThree">
+                <div id="Date">date</div>
+                <div id="icon">icon</div>
+                <div id="temp">temp</div>
+                <div id="windSpeed">wind speed</div>
+                <div id="humidity">humidity</div>
+            </div>
+            <div class='future-weather-one' id="dayFour">
+                <div id="Date">date</div>
+                <div id="icon">icon</div>
+                <div id="temp">temp</div>
+                <div id="windSpeed">wind speed</div>
+                <div id="humidity">humidity</div>
+            </div>
+            <div class='future-weather-one' id="dayFive">
+                <div id="Date">date</div>
+                <div id="icon">icon</div>
+                <div id="temp">temp</div>
+                <div id="windSpeed">wind speed</div>
+                <div id="humidity">humidity</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>

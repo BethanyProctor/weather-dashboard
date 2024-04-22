@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: aliceblue;
+    line-height: 1.5;
+    display: flex;
+}
+
+.submit-btn {
+    font-family: 'Quicksand', sans-serif;
+    background-color: aliceblue;
+    padding: 1%;
+    border-radius: 2px;
+    border: none;
+    margin: 2%;
+}
+
+.main {
+    text-align: center;
+    margin: 2%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.4);
+    flex:1;
+}
+
+form {
+    padding-top: 20px;
+}
+
+.main h2 {
+    margin-top:6%;
+    margin-bottom:4%;
+}
+
+.main p {
+    font-size: 130%;
+}
+
+.weather-area {
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    margin: 2%;
+    flex: 3;
+}
+
+.weather-area h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.future-weather-five {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
