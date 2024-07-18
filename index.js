@@ -87,5 +87,20 @@ const getCityCoords = () => {
      })
 }
 
+const searchHistory = () => {
+    const searchedCity = {
+        city: cityInput.value.trim()
+    };
+
+    localStorage.setItem('searchedCity', json.stringify(searchedCity))
+    console.log(localStorage);
+}
+
+const init = () => {
+    JSON.parse(localStorage.getItem('searchedCity'));
+}
+init();
+
+
 searchButton.addEventListener("click", getCityCoords);
 cityInput.addEventListener("keyup", e => e.key === "Enter" && getCityCoords());
