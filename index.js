@@ -1,15 +1,12 @@
 //need: date, icon, temp, humidity, wind speed
-const userCityEl = document.getElementById('userCity');
-const submitBtnEl = document.querySelector('.submit-btn')
-const recentList = document.querySelector('.recentCities')
 
-const cityEl = document.getElementById('current-city');
-const currentDateEl = document.getElementById('currentDate');
-const currentWeatherEl = document.getElementById('currentWeather');
-const forecastEl = document.getElementById('fiveDayWeather');
-const currentTempEl = document.getElementById('current-temp');
-const currentWindEl = document.getElementById('current-windspeed');
-const currentHumidityEl = document.getElementById('current-humidity');
+const weatherArea = document.getElementById('weatherArea')
+const searchInput = document.querySelector('.search')
+const submitBtnEl = document.querySelector('.submit-btn')
+const recentList = document.querySelector('.search-history')
+const displayCurrent = document.querySelector('.current-body')
+const date = document.querySelector('.current-header')
+const displayForecast = document.querySelector('.future-weather-body')
 
 const searchHistory = [];
 
@@ -20,7 +17,7 @@ const geoAPIKey = `1a874bf16e155d8774b70ff5fb8c74e2`;
 const APIKey = `2ce87c45b4c5de93bf67b3918c1caa4a`;
 
 const getCityCoords = () => {
-    const cityName = userCityEl.value;
+    const cityName = searchInput.value;
     if (!cityName) alert ('Enter a City to get Started');
 
     const geoURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${geoAPIKey}`;

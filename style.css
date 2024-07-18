@@ -1,66 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: aliceblue;
-    line-height: 1.5;
-    display: flex;
+    background-color: lightgray;
 }
 
-.submit-btn {
-    font-family: 'Quicksand', sans-serif;
-    background-color: aliceblue;
-    padding: 1%;
-    border-radius: 2px;
+h1 {
+    color: white;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1.75rem;
+    background-color:cornflowerblue;
+}
+
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+
+.weather-input {
+    width: 550px;
+}
+.weather-input input {
+    width: 100%;
+    height: 46px;
+    outline: none;
+    padding: 0 15px;
+    margin: 10px 0 20px 0;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+.weather-input button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
     border: none;
-    margin: 2%;
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
-.main {
-    text-align: center;
-    margin: 2%;
-    padding: 10px;
-    background-color: rgba(0,0,0,0.4);
-    flex:1;
+.weather-data {
+    width: 100%;
 }
 
-form {
-    padding-top: 20px;
-}
-
-.main h2 {
-    margin-top:6%;
-    margin-bottom:4%;
-}
-
-.main p {
-    font-size: 130%;
-}
-
-.weather-area {
-    text-align: center;
-    background-color: rgba(0,0,0,0.4);
-    margin: 2%;
-    flex: 3;
-}
-
-.weather-area h2 {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.future-weather-five {
+.current-weather {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px 70px 20px 20px;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content: space-between;
 }
 
+.current-weather h2 {
+    font-size: 1.7rem;
+}
+
+.current-weather .icon img {
+    max-width: 120px;
+    margin-top: -15px;
+}
+
+.weather-data h4 {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+}
