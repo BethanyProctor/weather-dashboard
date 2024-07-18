@@ -16,6 +16,8 @@
 
   ## Usage
   This app is simple to use. All you need to do is <a href="https://bethanyproctor.github.io/weather-dashboard/">visit the site</a> and enter your city. You don't need to download anything at all to use it! 
+  ![image](https://github.com/user-attachments/assets/da66ce74-2d53-44d6-87a2-16c51903ae4a)
+
   </br>
   </br>
   Languages : HTML CSS JavaScript
