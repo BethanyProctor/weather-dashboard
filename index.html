@@ -7,25 +7,17 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <div class="main">
-        <header>
-            <h1>Weather Dashboard</h1>
-        </header>
-        <div class="searchArea">
-            <form>
-                <label for="city">Search for your City...</label>
-                <br>
-                <input type="text" id="userCity" name="city">
-                <input class='submit-btn' type="submit" value="Submit">
-            </form>
+    <aside>
+        <form action="" id="form">
             <div>
-                <h2>Recent Searches:</h2>
-                <div class="recentCities">
-                    
-                </div>
+                <h2>Search for your City</h2>
+                <input type="text" class="search" placeholder="Enter City...">
+                <button type="submit">Search</button>
             </div>
-        </div>
-    </div> 
+        </form>
+        <div class="search-history"></div>
+    </aside>
+    
     <div class='weather-area' id="weatherArea">
         <h2 id="current-city">Showing Weather for: Your City</h2>
         <div class='current-weather' id="currentWeather">
